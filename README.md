@@ -11,11 +11,11 @@
 ## вместо rabbitmq, я использовал redis 5.0
 ## разработку вел на windows, использовал open server
 
-1 создать .env
-2 composer update
-3 php artisan key:generate
-4 npm install
-5 настроить в .env файле окружение:
+## 1 создать .env
+## 2 composer update
+## 3 php artisan key:generate
+## 4 npm install
+## 5 настроить в .env файле окружение:
     подключение к бд, 
     APP_URL= в конце урла обязательно добавить "/" (http://testapp/)
 
@@ -35,8 +35,8 @@
     MAIL_FROM_ADDRESS=
     MAIL_FROM_NAME="${APP_NAME}"
 
-6 php artisan migrate
-7 npm run dev
-8 php artisan queue:work - для запуска очередей(отправка верификации)
+## 6 php artisan migrate
+## 7 npm run dev
+## 8 php artisan queue:work - для запуска очередей(отправка верификации)
 
-## php artisan insert:history - записать курс валют в историю
+## -- php artisan insert:history - записать курс валют в историю
