@@ -1,0 +1,1 @@
+Нажмите на <a href="{{ env('APP_URL') }}api/verify?code={{ $verification_code }}">ссылку</a> для подтверждения верификации 
