@@ -46,7 +46,7 @@ export default {
 
             try {
                 let response = await repository.register(this.form);
-                // await this.$store.dispatch('login', response.data);
+                alert('Проверьте почту и подтвердите верификацию.')
                 await this.$router.push({ name: 'Login' });
             } catch (error) {
                 this.error = error;
